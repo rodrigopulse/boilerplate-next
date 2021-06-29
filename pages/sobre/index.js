@@ -1,5 +1,14 @@
+import Head from "next/head";
+
 const Sobre = () => {
-  return <h1>Sobre</h1>;
+  return (
+    <div>
+      <Head>
+        <title>Sobre</title>
+      </Head>
+      <h1>Sobre</h1>
+    </div>
+  );
 };
 
 export default Sobre;
