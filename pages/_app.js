@@ -16,8 +16,8 @@ const MyApp = ({ Component, pageProps, props }) => {
 };
 
 MyApp.getInitialProps = async () => {
-  const res = await axios(`${process.env.API}/api/menu`);
-  return { props: { menu: res.data } };
+  const menu = await axios(`${process.env.API}/api/menu`);
+  return { props: { menu: menu.data } };
 };
 
 export default MyApp;
