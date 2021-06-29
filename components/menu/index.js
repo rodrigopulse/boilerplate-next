@@ -31,7 +31,6 @@ const Menu = () => {
           {res.label}
         </a>
       ))}
-      {console.log("slug: ", router)}
     </nav>
   );
 };

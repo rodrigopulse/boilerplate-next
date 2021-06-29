@@ -1,7 +1,5 @@
-import Home from "./home";
-
-const HomeIndex = () => {
-  return <Home />;
+const Home = () => {
+  return <h1>Home</h1>;
 };
 
-export default HomeIndex;
+export default Home;
