@@ -1,0 +1,15 @@
+.menu {
+  width: 100%;
+}
+.menuLink {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.menuLinkActive {
+  color: #fff;
+  text-decoration: underline;
+}
