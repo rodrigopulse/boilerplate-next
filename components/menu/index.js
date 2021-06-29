@@ -3,19 +3,11 @@ import style from "./menu.module.scss";
 
 import { useRouter } from "next/router";
 
-const Menu = () => {
+const Menu = (props) => {
   const router = useRouter();
 
-  const menuItems = [
-    {
-      label: "Home",
-      path: "/",
-    },
-    {
-      label: "Sobre",
-      path: "/sobre",
-    },
-  ];
+  const menuItems = props.items;
+
   return (
     <nav className={style.menu}>
       {menuItems.map((res, index) => (

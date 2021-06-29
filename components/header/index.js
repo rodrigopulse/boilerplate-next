@@ -4,10 +4,10 @@ import styles from "./header.module.scss";
 // Components
 import Menu from "../menu";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={styles.header}>
-      <Menu />
+      <Menu items={props.menu} />
     </header>
   );
 };
